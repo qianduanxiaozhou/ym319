@@ -1,0 +1,27 @@
+<!--pages/addressBook/addressBook.wxml-->
+<view class="main">
+    <!-- 侧边栏 -->
+    <view class="sidebar">
+        <view class="sidebarItem {{  'id' + index== toView  ? 'active': ''}}" bindtap="goTo" wx:for="{{lettersArr}}" wx:key="index" data-myId="id{{index}}">
+            <view class="letter">{{item}}</view>
+        </view>
+    </view>
+    <!-- 列表 -->
+    <scroll-view class="view" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true">
+        <view wx:for="{{lettersArr}}" wx:key="index" id="id{{index}}">
+            <view class="title">{{item}}</view>
+            <view class="items">
+                <image class="ava_img" src="../../image/two.webp"></image>
+                <view class="aname">{{index}}</view>
+            </view>
+            <view class="items">
+                <image class="ava_img" src="../../image/two.webp"></image>
+                <view class="aname">路人甲</view>
+            </view>
+            <view class="items">
+                <image class="ava_img" src="../../image/two.webp"></image>
+                <view class="aname">路人甲</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

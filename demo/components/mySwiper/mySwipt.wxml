@@ -1,0 +1,13 @@
+<swiper indicator-active-color="#ffff"
+        autoplay="true"
+        interval="2000"
+        circular="true"
+        indicator-dots="true">
+
+    <!-- 循环父组件传递过来的图片路径，渲染出图片 -->
+    <block wx:for="{{imagesUrl}}" wx:key="index">
+        <swiper-item>
+            <image class="swiperImg" src="{{item}}"></image>
+        </swiper-item>
+    </block>
+</swiper>

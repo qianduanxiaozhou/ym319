@@ -1,0 +1,8 @@
+/* components/mySwiper/mySwipt.wxss */
+swiper {
+    height: 250px;
+}
+.swiperImg {
+    width: 100%;
+    height: 100%;
+}

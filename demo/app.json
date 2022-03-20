@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/addressBook/addressBook"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "轮播图",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "mySwiper": "./components/mySwiper/mySwipt"
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+
+  "tabBar": {
+    "selectedColor": "#0066FF",
+    "backgroundColor": "#DDDDDD",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "./image/icon/home1.png",
+      "selectedIconPath": "./image/icon/home2.png"
+    },
+    {
+      "pagePath": "pages/addressBook/addressBook",
+      "text": "联系人",
+      "iconPath": "./image/icon/contacts1.png",
+      "selectedIconPath": "./image/icon/contacts2.png"
+    }]
+  }
+}
